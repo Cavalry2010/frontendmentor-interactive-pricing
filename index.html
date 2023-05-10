@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+    <script defer src="./js/script.js"></script>
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+  </head>
+  <body>
+    <main>
+      <div class="container align-center">
+        <div class="heading-box">
+          <h1 class="primary-heading">Simple, traffic-based pricing</h1>
+          <p class="sub-heading">
+            Sign-up for our 30-day trial. No credit card required.
+          </p>
+        </div>
+        <form class="pricing-form">
+          <div class="pricing-details">
+            <p class="pageviews">
+              <span class="pageviews-num">100K</span> pageviews
+            </p>
+            <p class="price-per-timeframe">
+              <span class="price">$16.00</span> /
+              <span class="timeframe">month</span>
+            </p>
+          </div>
+          <input id="price-selector" type="range" min="0" max="4" value="2" />
+          <div class="billing-plan-box">
+            <p class="billing-text">Monthly Billing</p>
+            <button
+              class="billing-plan-btn"
+              type="button"
+              aria-label="Switch between montly and yearly billing"
+            ></button>
+            <p class="billing-text yearly-billing">Yearly Billing</p>
+          </div>
+          <div class="features-and-submit-box">
+            <ul class="features">
+              <li><p class="feature">Unlimited websites</p></li>
+              <li><p class="feature">100% data ownership</p></li>
+              <li><p class="feature">Email reports</p></li>
+            </ul>
+            <button class="start-trial-btn" type="submit">
+              Start my trial
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Alejandro Perdomo</a>.
+      </div>
+    </footer>
+  </body>
+</html>

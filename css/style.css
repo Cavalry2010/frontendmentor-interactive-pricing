@@ -1,0 +1,289 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(230, 100%, 99%);
+  background-image: url("../images/bg-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.container {
+  max-width: 111rem;
+  margin: 0 auto;
+}
+
+.align-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.heading-box {
+  text-align: center;
+  background-image: url("../images/pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 4rem 0;
+  margin: 6rem 0 8rem;
+}
+
+.primary-heading {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #293356;
+  margin-bottom: 1rem;
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #858fad;
+}
+
+.pricing-form {
+  width: 54rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 15px 30px 3px rgba(133, 143, 173, 0.15);
+}
+
+.pricing-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.5rem 4.5rem 2rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.transition {
+  transform: translateY(-2rem);
+  opacity: 0;
+}
+
+.pageviews {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #858fad;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+.price-per-timeframe {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #858fad;
+}
+
+.price {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #293356;
+  margin-right: 0.4rem;
+}
+
+.pricing-form input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 83.5%;
+  height: 0.8rem;
+  background: linear-gradient(
+    to right,
+    #a5f3eb 0%,
+    #a5f3eb 50%,
+    #eaeefb 50%,
+    #eaeefb 100%
+  );
+  border-radius: 100px;
+  margin: 0 4.5rem;
+}
+
+.pricing-form input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: #10d5c2;
+  background-image: url("../images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  box-shadow: 0 10px 30px 2px rgba(16, 213, 193, 0.75);
+  cursor: pointer;
+}
+
+.pricing-form input[type="range"]::-webkit-slider-thumb:hover {
+  opacity: 0.8;
+}
+
+.pricing-form input[type="range"]::-webkit-slider-thumb:active {
+  background-color: #22aea1;
+  opacity: 1;
+  cursor: grab;
+}
+
+.pricing-form input[type="range"]::-moz-range-thumb {
+  -moz-appearance: none;
+  appearance: none;
+  height: 4rem;
+  width: 4rem;
+  border: none;
+  border-radius: 50%;
+  background-color: #10d5c2;
+  background-image: url("../images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  box-shadow: 0 10px 30px 2px rgba(16, 213, 193, 0.75);
+  cursor: pointer;
+}
+
+.pricing-form input[type="range"]::-moz-range-thumb:hover {
+  opacity: 0.8;
+}
+
+.pricing-form input[type="range"]::-moz-range-thumb:active {
+  background-color: #22aea1;
+  opacity: 1;
+  cursor: grab;
+}
+
+.billing-plan-box {
+  margin-top: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.billing-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #858fad;
+}
+
+.yearly-billing {
+  position: relative;
+}
+
+.yearly-billing::after {
+  content: "25% discount";
+  width: 95%;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #ff8c66;
+  background-color: #feece7;
+  padding: 0.2rem 0.6rem 0.3rem;
+  border-radius: 100px;
+  margin-left: 0.5rem;
+  position: absolute;
+  top: 0;
+  right: -9rem;
+}
+
+.billing-plan-btn {
+  height: 2.2rem;
+  width: 4.4rem;
+  border-radius: 100px;
+  border: none;
+  background-color: #cdd7ee;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.billing-plan-btn:hover {
+  background-color: #a5f3eb;
+}
+
+.billing-plan-btn::after {
+  content: "";
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-115%, -50%);
+  transition: transform 0.2s;
+}
+
+.billing-plan-btn--active {
+  background-color: #10d5c2 !important;
+}
+
+.billing-plan-btn--active::after {
+  transform: translate(15%, -50%);
+}
+
+.features-and-submit-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+  border-top: 1px solid #eaeefb;
+  padding: 3.25rem 4.5rem;
+}
+
+.features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: 2.5rem;
+}
+
+.feature {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #858fad;
+  position: relative;
+}
+
+.feature::after {
+  content: url("../images/icon-check.svg");
+  position: absolute;
+  top: 0;
+  left: -2.5rem;
+}
+
+.start-trial-btn {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #bdccff;
+  background-color: #293356;
+  border: none;
+  border-radius: 100px;
+  padding: 1.2rem 4.5rem;
+  cursor: pointer;
+}
+
+.start-trial-btn:hover {
+  color: #fff;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

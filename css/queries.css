@@ -1,0 +1,69 @@
+@media (max-width: 26em) {
+  body {
+    background-size: 400%;
+  }
+
+  .container {
+    max-width: 33rem;
+    margin: 4rem auto;
+  }
+
+  .heading-box {
+    margin: 2rem 0 3rem;
+  }
+
+  .primary-heading {
+    font-size: 2.2rem;
+  }
+
+  .sub-heading {
+    padding: 0 6rem;
+    line-height: 1.5;
+  }
+
+  .pricing-form {
+    width: 33.5rem;
+    position: relative;
+  }
+
+  .pricing-details {
+    flex-direction: column;
+    gap: 9rem;
+  }
+
+  .pageviews {
+    letter-spacing: 0.2rem;
+  }
+
+  .price {
+    font-size: 3.6rem;
+  }
+
+  .pricing-form input[type="range"] {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 9rem;
+    margin: 0 auto;
+  }
+
+  .billing-plan-box {
+    gap: 1rem;
+    margin-top: 0;
+  }
+
+  .yearly-billing::after {
+    content: "-25%";
+    width: 35%;
+    right: -4.5rem;
+  }
+
+  .features-and-submit-box {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .features {
+    align-items: center;
+  }
+}

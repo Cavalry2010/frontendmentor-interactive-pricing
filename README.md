@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/responsive-interactive-pricing-component-with-vanilla-js-VXnGuAec8o)
 - Live Site URL: [Interactive Pricing Component](https://interactive-pricing-alejandro.netlify.app)
 
 ## My process

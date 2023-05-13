@@ -41,11 +41,14 @@ class DraggableSelector {
   updatePrice(range) {
     this.pricingDetails.classList.toggle("transition");
     const timeframe = this.discount === 1 ? "month" : "year";
+    const perYear = this.discount === 1 ? 1 : 12;
     setTimeout(
       function () {
         this.pageviews.textContent = this.plans[range][0];
         this.price.textContent = `$${(
-          this.plans[range][1] * this.discount
+          this.plans[range][1] *
+          perYear *
+          this.discount
         ).toFixed(2)}`;
         this.timeframe.textContent = timeframe;
         this.pricingDetails.classList.toggle("transition");
